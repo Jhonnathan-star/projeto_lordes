@@ -35,10 +35,12 @@
   },
   "name":"Rei_do_Gol",
   "resources":[
+    {"id":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},},
+    {"id":{"name":"Obj_jogador","path":"objects/Obj_jogador/Obj_jogador.yy",},},
     {"id":{"name":"obj_rua","path":"objects/obj_rua/obj_rua.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"id":{"name":"jogador","path":"sprites/jogador/jogador.yy",},},
     {"id":{"name":"spr_rua","path":"sprites/spr_rua/spr_rua.yy",},},
-    {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
   ],
   "resourceType":"GMProject",
   "resourceVersion":"2.0",

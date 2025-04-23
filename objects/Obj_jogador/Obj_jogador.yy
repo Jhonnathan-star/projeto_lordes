@@ -1,12 +1,9 @@
 {
   "$GMObject":"",
-  "%Name":"obj_rua",
-  "eventList":[
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-  ],
+  "%Name":"Obj_jogador",
+  "eventList":[],
   "managed":true,
-  "name":"obj_rua",
+  "name":"Obj_jogador",
   "overriddenProperties":[],
   "parent":{
     "name":"Objetos",
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_rua",
-    "path":"sprites/spr_rua/spr_rua.yy",
+    "name":"jogador",
+    "path":"sprites/jogador/jogador.yy",
   },
   "spriteMaskId":null,
   "visible":true,
