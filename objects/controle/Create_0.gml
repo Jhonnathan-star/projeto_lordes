@@ -1,0 +1,1 @@
+global.velocidade = 2;
