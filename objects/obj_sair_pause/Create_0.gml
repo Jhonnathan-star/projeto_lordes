@@ -1,0 +1,12 @@
+event_inherited();
+
+acao_botao = function()
+{
+	layer_set_visible("Ui_fim_de_jogo", 0);
+	layer_set_visible("Ui_game_over", 0);
+	layer_set_visible("Ui_sair", 0);
+	layer_set_visible("Ui_creditos", 0);
+	layer_set_visible("Ui_opcoes", 0);
+	layer_set_visible("Ui_menu", 0);
+	//layer_set_visible("Ui_jogo", 1);
+}
