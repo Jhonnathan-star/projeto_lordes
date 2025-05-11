@@ -63,7 +63,6 @@
     {"id":{"name":"obj_voltar_creditos","path":"objects/obj_voltar_creditos/obj_voltar_creditos.yy",},},
     {"id":{"name":"obj_voltar","path":"objects/obj_voltar/obj_voltar.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"id":{"name":"sala_jogo","path":"rooms/sala_jogo/sala_jogo.yy",},},
     {"id":{"name":"RoomUI","path":"roomui/RoomUI/RoomUI.yy",},},
     {"id":{"name":"click_button","path":"sounds/click_button/click_button.yy",},},
     {"id":{"name":"fundo_menu","path":"sounds/fundo_menu/fundo_menu.yy",},},
@@ -90,7 +89,6 @@
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
     {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
-    {"roomId":{"name":"sala_jogo","path":"rooms/sala_jogo/sala_jogo.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[
