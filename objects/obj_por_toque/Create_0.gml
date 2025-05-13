@@ -1,2 +1,2 @@
 // Sprite inicial
-sprite_index = spr_sem_som;
+sprite_index = spr_toque;

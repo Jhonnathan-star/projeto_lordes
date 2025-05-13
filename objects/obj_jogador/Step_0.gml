@@ -64,8 +64,8 @@ if (global.controle_tipo == "toque") {
     var dist = point_distance(0, 0, dx, dy);
 
     // Move
-    x += lengthdir_x(dist * 0.1, dir);
-    y += lengthdir_y(dist * 0.1, dir);
+    x += lengthdir_x(dist * 0.3, dir);
+    y += lengthdir_y(dist * 0.25, dir);
 
     // ⛔ Limita o movimento à área permitida
     x = clamp(x, area_x1, area_x2);
