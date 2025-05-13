@@ -12,18 +12,18 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"a1c5f5ef-a493-4a0c-b9e1-36b2978e7100","name":"a1c5f5ef-a493-4a0c-b9e1-36b2978e7100","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2c5c52c1-883c-4358-81ef-3e4676a1b2a5","name":"2c5c52c1-883c-4358-81ef-3e4676a1b2a5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":1920,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"219dab66-71ba-4a1e-8a58-a9367488607e","blendMode":0,"displayName":"default","isLocked":false,"name":"219dab66-71ba-4a1e-8a58-a9367488607e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"32884696-86dd-4aeb-82d2-08c7a0183bca","blendMode":0,"displayName":"default","isLocked":false,"name":"32884696-86dd-4aeb-82d2-08c7a0183bca","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"fundo_creditos",
   "nineSlice":null,
-  "origin":0,
+  "origin":4,
   "parent":{
     "name":"fundo_menu",
     "path":"folders/Sprites/fundo_menu.yy",
@@ -71,14 +71,14 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a1c5f5ef-a493-4a0c-b9e1-36b2978e7100","path":"sprites/fundo_creditos/fundo_creditos.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"7b45476a-7b5b-4658-b00e-a926e3e7b094","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2c5c52c1-883c-4358-81ef-3e4676a1b2a5","path":"sprites/fundo_creditos/fundo_creditos.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"5bf5f424-4e1d-4883-9602-4d1ea3239184","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":0,
-    "yorigin":0,
+    "xorigin":540,
+    "yorigin":960,
   },
   "swatchColours":null,
   "swfPrecision":0.5,

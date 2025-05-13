@@ -7,6 +7,6 @@ if (!global.paused) {
         
         instance_create_layer(pos_x, pos_y, "Instances", obj_moeda);
 
-        tempo_moeda = irandom_range(room_speed * 2, room_speed * 5); // redefine o tempo
+        tempo_moeda = irandom_range(room_speed* 2, room_speed * 5); // redefine o tempo
     }
 }
