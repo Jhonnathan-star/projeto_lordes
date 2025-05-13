@@ -1,15 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_sem_som2",
+  "%Name":"obj_com_som_efeitos_sonoros",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_sem_som2",
+  "name":"obj_com_som_efeitos_sonoros",
   "overriddenProperties":[],
   "parent":{
-    "name":"pause",
-    "path":"folders/Objects/pause.yy",
+    "name":"objetos_menu",
+    "path":"folders/Objects/objetos_menu.yy",
   },
   "parentObjectId":{
     "name":"obj_botao_base",
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_sem_som",
-    "path":"sprites/spr_sem_som/spr_sem_som.yy",
+    "name":"spr_com_som",
+    "path":"sprites/spr_com_som/spr_com_som.yy",
   },
   "spriteMaskId":null,
   "visible":true,
