@@ -39,20 +39,23 @@ if( global.pontuacao > global.dificuldade * 100){
 	// }
 //}
 
+// Movimento baseado no joystick
 if (obj_joystick.active) {
-    // Direção do movimento a partir do joystick
-    var dir = point_direction(obj_joystick.center_x, obj_joystick.center_y, obj_joystick.stick_x, obj_joystick.stick_y);
-    
-    // Distância que a alavanca foi arrastada, em relação ao raio total
-    var dist = point_distance(obj_joystick.center_x, obj_joystick.center_y, obj_joystick.stick_x, obj_joystick.stick_y);
+    var dx = obj_joystick.stick_x - obj_joystick.center_x;
+    var dy = obj_joystick.stick_y - obj_joystick.center_y;
 
-    // A velocidade será proporcional à distância do centro do joystick
-    var vel = (dist / obj_joystick.radius) * 12; // 10 é a velocidade máxima
-
-    // Movimento do jogador
-    x += lengthdir_x(vel, dir);
-    y += lengthdir_y(vel, dir);
+    var sensibilidade = 0.3;
+    x += dx * sensibilidade;
+    y += dy * sensibilidade;
 }
 
+// Limitar o jogador dentro da área permitida
+var area_x1 = 150;
+var area_y1 = room_height div 6;
+var area_x2 = room_width - 150;
+var area_y2 = room_height - 400;
+
+x = clamp(x, area_x1, area_x2);
+y = clamp(y, area_y1, area_y2);
 
 
