@@ -39,23 +39,39 @@ if( global.pontuacao > global.dificuldade * 100){
 	// }
 //}
 
-// Movimento baseado no joystick
-if (obj_joystick.active) {
-    var dx = obj_joystick.stick_x - obj_joystick.center_x;
-    var dy = obj_joystick.stick_y - obj_joystick.center_y;
-
-    var sensibilidade = 0.3;
-    x += dx * sensibilidade;
-    y += dy * sensibilidade;
-}
-
-// Limitar o jogador dentro da área permitida
+// Limites da área de controle (iguais ao modo toque)
 var area_x1 = 150;
 var area_y1 = room_height div 6;
 var area_x2 = room_width - 150;
-var area_y2 = room_height - 400;
+var area_y2 = room_height - 300;
 
-x = clamp(x, area_x1, area_x2);
-y = clamp(y, area_y1, area_y2);
+if (global.controle_tipo == "toque") {
+    if (device_mouse_check_button(0, mb_left)) {
+        var toque_x = device_mouse_x_to_gui(0);
+        var toque_y = device_mouse_y_to_gui(0);
+
+        if (toque_x > area_x1 && toque_x < area_x2 && toque_y > area_y1 && toque_y < area_y2) {
+            x = lerp(x, toque_x, 0.2); 
+            y = lerp(y, toque_y, 0.2);
+        }
+    }
+
+} else if (global.controle_tipo == "joystick" && instance_exists(obj_joystick)) {
+    var dx = obj_joystick.stick_x - obj_joystick.center_x;
+    var dy = obj_joystick.stick_y - obj_joystick.center_y;
+
+    var dir = point_direction(0, 0, dx, dy);
+    var dist = point_distance(0, 0, dx, dy);
+
+    // Move
+    x += lengthdir_x(dist * 0.1, dir);
+    y += lengthdir_y(dist * 0.1, dir);
+
+    // ⛔ Limita o movimento à área permitida
+    x = clamp(x, area_x1, area_x2);
+    y = clamp(y, area_y1, area_y2);
+}
+
+
 
 

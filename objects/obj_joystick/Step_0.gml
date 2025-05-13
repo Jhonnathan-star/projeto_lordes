@@ -1,9 +1,13 @@
-if (mouse_check_button(mb_left)) {
-    var mx = device_mouse_x(0);
-    var my = device_mouse_y(0);
+// Suporte a toque e mouse
+if (device_mouse_check_button(0, mb_left)) {
+    var mx = device_mouse_x_to_gui(0);
+    var my = device_mouse_y_to_gui(0);
     
-    if (point_distance(center_x, center_y, mx, my) < radius) {
-        active = true;
+    if (!active) {
+        // Ativar só se o toque começar dentro do raio
+        if (point_distance(center_x, center_y, mx, my) < radius) {
+            active = true;
+        }
     }
 
     if (active) {
