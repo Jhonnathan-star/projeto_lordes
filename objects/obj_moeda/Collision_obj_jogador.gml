@@ -4,6 +4,8 @@ if (!coletada) {
 
     // Adiciona ponto
     global.pontuacao += 1;
+	
+	global.moedas += 1;
 
     // Toca o som da moeda
     audio_play_sound(som_moedas, 1, false); // índice de prioridade 1, não em loop

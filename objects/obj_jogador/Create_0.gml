@@ -4,3 +4,5 @@ global.dificuldade = 1
 
 global.vel = 12;
 
+global.moedas = 0;
+
