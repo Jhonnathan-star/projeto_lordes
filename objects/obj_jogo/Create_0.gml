@@ -4,6 +4,8 @@ layer_set_visible("Ui_creditos", 0);
 layer_set_visible("Ui_sair", 0);
 layer_set_visible("Ui_game_over", 0);
 layer_set_visible("Ui_pause", 0);
+layer_set_visible("Ui_loja", 0);
+
 
 if (!audio_is_playing(fundo_menu)) {
     audio_play_sound(fundo_menu, 1, true);
@@ -16,3 +18,5 @@ if (file_exists("moedas_saldo.ini")) {
 } else {
     global.moedas = 0; // Caso o arquivo INI não exista, define as moedas como 0
 }
+
+
