@@ -39,11 +39,17 @@ if( global.pontuacao > global.dificuldade * 100){
 	// }
 //}
 
-// Limites da área de controle (iguais ao modo toque)
+// Limites da área de controle (toque)
 var area_x1 = 150;
 var area_y1 = room_height div 6;
 var area_x2 = room_width - 150;
-var area_y2 = room_height - 300;
+var area_y2 = room_height - 100;
+
+// Limites da área de controle (joy)
+var jarea_x1 = 150;
+var jarea_y1 = room_height div 6;
+var jarea_x2 = room_width - 150;
+var jarea_y2 = room_height - 450;
 
 if (global.controle_tipo == "toque") {
     if (device_mouse_check_button(0, mb_left)) {
@@ -76,8 +82,8 @@ if (global.controle_tipo == "toque") {
     y += lengthdir_y(velocidade_y, dir);  // Velocidade no eixo Y (ajustada)
 
     // ⛔ Limita o movimento à área permitida
-    x = clamp(x, area_x1, area_x2);
-    y = clamp(y, area_y1, area_y2);
+    x = clamp(x, jarea_x1, jarea_x2);
+    y = clamp(y, jarea_y1, jarea_y2);
 }
 
 

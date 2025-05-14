@@ -58,7 +58,6 @@
     {"id":{"name":"obj_controlador","path":"objects/obj_controlador/obj_controlador.yy",},},
     {"id":{"name":"obj_credito","path":"objects/obj_credito/obj_credito.yy",},},
     {"id":{"name":"obj_gerenciador_obst","path":"objects/obj_gerenciador_obst/obj_gerenciador_obst.yy",},},
-    {"id":{"name":"obj_hud_moedas","path":"objects/obj_hud_moedas/obj_hud_moedas.yy",},},
     {"id":{"name":"obj_hud","path":"objects/obj_hud/obj_hud.yy",},},
     {"id":{"name":"obj_icone_pause","path":"objects/obj_icone_pause/obj_icone_pause.yy",},},
     {"id":{"name":"obj_jogador","path":"objects/obj_jogador/obj_jogador.yy",},},
