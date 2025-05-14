@@ -65,7 +65,7 @@ if (global.controle_tipo == "toque") {
 
     // Move
     x += lengthdir_x(dist * 0.3, dir);
-    y += lengthdir_y(dist * 0.25, dir);
+    y += lengthdir_y(dist * 0.2, dir);
 
     // ⛔ Limita o movimento à área permitida
     x = clamp(x, area_x1, area_x2);

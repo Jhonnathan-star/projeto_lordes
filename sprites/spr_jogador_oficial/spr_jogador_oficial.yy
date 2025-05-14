@@ -12,19 +12,21 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"","%Name":"c6aab7a6-2eb7-4ec7-8fb1-c47be175b586","name":"c6aab7a6-2eb7-4ec7-8fb1-c47be175b586","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"23e93030-f4b1-44ec-9bff-f07872d4f01d","name":"23e93030-f4b1-44ec-9bff-f07872d4f01d","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"8046c725-68fd-4952-a402-e2475948f9b4","name":"8046c725-68fd-4952-a402-e2475948f9b4","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"17fb18d3-e5c7-4e61-a5ae-451f7e953822","name":"17fb18d3-e5c7-4e61-a5ae-451f7e953822","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"14f49fba-fc2a-48a9-b523-4e52968696ba","name":"14f49fba-fc2a-48a9-b523-4e52968696ba","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"","%Name":"1415db77-ad3f-4cad-a3e6-919e37fd8653","name":"1415db77-ad3f-4cad-a3e6-919e37fd8653","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"378e85f9-26cf-495d-80aa-eab6d7c97057","name":"378e85f9-26cf-495d-80aa-eab6d7c97057","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"3bd60024-79a5-4297-abce-b83265e4e483","name":"3bd60024-79a5-4297-abce-b83265e4e483","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"a7eafaaf-c11c-436d-89af-56cc70c63329","name":"a7eafaaf-c11c-436d-89af-56cc70c63329","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"fd87c23d-8d6d-4c03-93e8-f965e758cacf","name":"fd87c23d-8d6d-4c03-93e8-f965e758cacf","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"6e82f345-03d5-4044-ad8a-b7f94bdc15b3","name":"6e82f345-03d5-4044-ad8a-b7f94bdc15b3","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"da3027ab-aa79-4f3e-a8ee-d03be4e56e71","name":"da3027ab-aa79-4f3e-a8ee-d03be4e56e71","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"2b8deb98-d02e-4113-8153-4989e32662ac","name":"2b8deb98-d02e-4113-8153-4989e32662ac","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"","%Name":"c43ae11b-00e1-450d-9212-d902735c380e","name":"c43ae11b-00e1-450d-9212-d902735c380e","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":800,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"313e2e70-1216-4da8-887f-003110149b3e","blendMode":0,"displayName":"default","isLocked":false,"name":"313e2e70-1216-4da8-887f-003110149b3e","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"d8eaa2ae-c454-430c-9d85-e9180ca65a6d","blendMode":0,"displayName":"default","isLocked":false,"name":"d8eaa2ae-c454-430c-9d85-e9180ca65a6d","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_jogador_oficial",
   "nineSlice":{
@@ -73,7 +75,7 @@
     },
     "eventStubScript":null,
     "eventToFunction":{},
-    "length":6.0,
+    "length":8.0,
     "lockOrigin":false,
     "moments":{
       "$KeyframeStore<MomentsEventKeyframe>":"",
@@ -95,23 +97,29 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c6aab7a6-2eb7-4ec7-8fb1-c47be175b586","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"44b5b974-0861-4067-95e8-356f00b7e959","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"378e85f9-26cf-495d-80aa-eab6d7c97057","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"08ff2f71-486c-409a-a6bc-076cbec6382f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"23e93030-f4b1-44ec-9bff-f07872d4f01d","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"67906fb0-1e2b-4bd1-a79c-ae6e823a1e11","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3bd60024-79a5-4297-abce-b83265e4e483","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"1624daf0-eb62-42bc-ad79-0876c02ebb3d","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"8046c725-68fd-4952-a402-e2475948f9b4","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f2a0e918-6714-4717-9a34-9b0cb049b8b6","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"a7eafaaf-c11c-436d-89af-56cc70c63329","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f8c03966-ecad-44c3-ae2c-47be1bd738e6","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"17fb18d3-e5c7-4e61-a5ae-451f7e953822","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"96b7fd72-dc08-434d-ba81-ac086f52523b","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"fd87c23d-8d6d-4c03-93e8-f965e758cacf","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"ccc25e08-bf3f-4868-9c91-e6cf86ff2ac1","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"14f49fba-fc2a-48a9-b523-4e52968696ba","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"fb7619b5-6969-443b-a385-18aeb6226f2b","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6e82f345-03d5-4044-ad8a-b7f94bdc15b3","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"c7a4be41-e78a-4ef2-baef-7fad3e279cab","IsCreationKey":false,"Key":4.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"1415db77-ad3f-4cad-a3e6-919e37fd8653","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"28ad7dd5-9903-4cd7-8955-41e2be028a2d","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"da3027ab-aa79-4f3e-a8ee-d03be4e56e71","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"91d2b658-ba22-474c-91a3-35df976d1242","IsCreationKey":false,"Key":5.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"2b8deb98-d02e-4113-8153-4989e32662ac","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"cb96eecf-86d9-47bc-b3aa-1555de6d418a","IsCreationKey":false,"Key":6.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+            {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"c43ae11b-00e1-450d-9212-d902735c380e","path":"sprites/spr_jogador_oficial/spr_jogador_oficial.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"13f4afac-a325-48b8-a02d-5c47dea7a734","IsCreationKey":false,"Key":7.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,
