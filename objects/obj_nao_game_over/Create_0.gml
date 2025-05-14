@@ -12,7 +12,6 @@ acao_botao = function()
 // Reseta as moedas da partida para 0 (para a próxima partida)
 	global.moedas_da_partida = 0; // Zera as moedas da partida após o fim do jogo
 
-
 	// Para a música do jogo
     audio_stop_sound(som_fundo);
 	room_goto(Room1);
