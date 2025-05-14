@@ -63,14 +63,23 @@ if (global.controle_tipo == "toque") {
     var dir = point_direction(0, 0, dx, dy);
     var dist = point_distance(0, 0, dx, dy);
 
+    // Ajusta a velocidade no eixo Y dependendo da direção
+    var velocidade_y;
+    if (dy < 0) {
+        velocidade_y = dist * 0.1;  // Velocidade mais lenta para cima (dy < 0)
+    } else {
+        velocidade_y = dist * 0.3;  // Velocidade mais rápida para baixo (dy > 0)
+    }
+
     // Move
-    x += lengthdir_x(dist * 0.3, dir);
-    y += lengthdir_y(dist * 0.2, dir);
+    x += lengthdir_x(dist * 0.3, dir);  // Velocidade no eixo X
+    y += lengthdir_y(velocidade_y, dir);  // Velocidade no eixo Y (ajustada)
 
     // ⛔ Limita o movimento à área permitida
     x = clamp(x, area_x1, area_x2);
     y = clamp(y, area_y1, area_y2);
 }
+
 
 
 
