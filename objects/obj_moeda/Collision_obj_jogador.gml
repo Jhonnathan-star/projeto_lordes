@@ -4,8 +4,9 @@ if (!coletada) {
 
     // Adiciona ponto
     global.pontuacao += 1;
-	
-	global.moedas += 1;
+
+    // Incrementa as moedas da partida (somente as moedas dessa partida)
+    global.moedas_da_partida += 1;
 
     // Toca o som da moeda
     audio_play_sound(som_moedas, 1, false); // índice de prioridade 1, não em loop
@@ -18,3 +19,4 @@ if (!coletada) {
     // Define alarme para sumir após 0.5 segundos
     alarm[0] = room_speed * 0.05;
 }
+

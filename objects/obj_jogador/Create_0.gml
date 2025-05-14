@@ -4,5 +4,5 @@ global.dificuldade = 1
 
 global.vel = 12;
 
-global.moedas = 0;
+global.moedas_da_partida = 0;
 

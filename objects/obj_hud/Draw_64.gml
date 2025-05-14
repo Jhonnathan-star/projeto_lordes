@@ -7,7 +7,7 @@ var view_y = camera_get_view_y(view_camera[0]);
 
 draw_text(view_x + 400, view_y + 100, "Pontuação: " + string(global.pontuacao));
 
-draw_text(view_x + 58, view_y + 110, + string(global.moedas));
+draw_text(view_x + 58, view_y + 110, + string(global.moedas_da_partida));
 
 draw_set_alpha(0.5);
 draw_set_color(c_black);
