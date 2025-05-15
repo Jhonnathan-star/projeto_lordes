@@ -1,8 +1,12 @@
 global.controle_tipo = "toque";
+// Toca o som de clique
+audio_play_sound(click_button, 1, false);
+// Salva no ini
+ini_open("config.ini");
+ini_write_string("controle", "tipo", "toque");
+ini_close();
 
 // Destroi o joystick se estiver ativo
 with (obj_joystick) {
     instance_destroy();
 }
-
-// Cria o objeto de toque, se você tiver um. Se for só por posição, pode ignorar isso.
