@@ -20,24 +20,6 @@ if( global.pontuacao > global.dificuldade * 100){
 	global.dificuldade++;
 }
 
-//Definir a área de controle
-//var area_x1 = 150;
-//var area_y1 = room_height div 6; 
-//var area_x2 = room_width - 150;
-//var area_y2 = room_height - 300;
-
-// Área de atuação do joystick
-
-//Detectar toque
-//if (device_mouse_check_button(0, mb_left)) {
-   // var toque_x = device_mouse_x_to_gui(0);
-   // var toque_y = device_mouse_y_to_gui(0);
-
-  //  if (toque_x > area_x1 && toque_x < area_x2 && toque_y > area_y1 && toque_y < area_y2) {
-   //     x = lerp(x, toque_x, 0.2); 
-	//	y = lerp(y,toque_y,0.2);
-	// }
-//}
 
 // Limites da área de controle (toque)
 var area_x1 = 150;
@@ -69,23 +51,30 @@ if (global.controle_tipo == "toque") {
     var dir = point_direction(0, 0, dx, dy);
     var dist = point_distance(0, 0, dx, dy);
 
-    // Ajusta a velocidade no eixo Y dependendo da direção
+    var intensidade = clamp(dist / obj_joystick.radius, 0, 1);
+    var velocidade_base = intensidade * intensidade * 80;
+
+    // Direções separadas
+    var velocidade_x = velocidade_base;
     var velocidade_y;
+
     if (dy < 0) {
-        velocidade_y = dist * 0.1;  // Velocidade mais lenta para cima (dy < 0)
+        // Indo para cima → mais lento
+        velocidade_y = velocidade_base * 0.5;
     } else {
-        velocidade_y = dist * 0.3;  // Velocidade mais rápida para baixo (dy > 0)
+        // Indo para baixo → mais rápido
+        velocidade_y = velocidade_base * 1.4;
     }
 
-    // Move
-    x += lengthdir_x(dist * 0.3, dir);  // Velocidade no eixo X
-    y += lengthdir_y(velocidade_y, dir);  // Velocidade no eixo Y (ajustada)
+    var alvo_x = x + lengthdir_x(velocidade_x, dir);
+    var alvo_y = y + lengthdir_y(velocidade_y, dir);
 
-    // ⛔ Limita o movimento à área permitida
+    x = lerp(x, alvo_x, 0.2);
+    y = lerp(y, alvo_y, 0.2);
+
     x = clamp(x, jarea_x1, jarea_x2);
     y = clamp(y, jarea_y1, jarea_y2);
 }
-
 
 
 
