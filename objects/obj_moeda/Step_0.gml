@@ -2,4 +2,5 @@ if (global.paused) {
     exit; // cancela a execução do Step
 }
 
-y += global.vel
+// Movimento para baixo acompanhando o fundo
+y += global.vel;// ou qualquer velocidade do seu fundo

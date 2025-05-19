@@ -1,8 +1,10 @@
-// Intervalo aleatório de tempo para gerar moedas
-tempo_moeda = irandom_range(room_speed * 2, room_speed * 5);
+// Número máximo de moedas visíveis
+max_moedas = 5;
 
-// Margens horizontais
-margem_x = 150;
-margem_y = 1500;
+// Intervalo de tempo entre cada geração (em frames)
+spawn_interval = 90;
+
+// Iniciar o alarme
+alarm[0] = spawn_interval;
 
 
