@@ -77,5 +77,23 @@ if (global.controle_tipo == "toque") {
 }
 
 
+// Contador do tempo de invencibilidade
+if (global.invencivel) {
+    global.poder_tempo -= 1;
+
+    // Muda sprite nos últimos 3 segundos
+    if (global.poder_tempo <= 90 && global.poder_tempo > 0) {
+        sprite_index = spr_jogador_poder_acabando;
+    }
+
+    // Acabou o tempo
+    if (global.poder_tempo <= 0) {
+        global.invencivel = false;
+        sprite_index = spr_jogador_oficial; // sprite original
+    }
+}
+
+
+
 
 

@@ -1,4 +1,6 @@
-// Evento Create de obj_obstacle_manager
+global.phase = 0
+
+
 
 // Número máximo de obstáculos que podem estar na tela ao mesmo tempo
 max_obstacles = 10;

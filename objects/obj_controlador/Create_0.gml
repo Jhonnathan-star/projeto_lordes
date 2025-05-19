@@ -18,4 +18,14 @@ if (global.controle_tipo == "joystick" && !instance_exists(obj_joystick)) {
 }
 
 
+//Tabela de Recordes
+
+ini_open("save.ini"); // abre o arquivo (se não existir, cria)
+global.recorde = ini_read_real("Recordes", "MaiorPontuacao", 0); // se não existir, retorna 0
+ini_close();
+
+
+
+
+
 

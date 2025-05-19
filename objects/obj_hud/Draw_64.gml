@@ -1,14 +1,19 @@
 draw_set_color(c_white); 
-draw_set_font(fnt_placar);
+draw_set_font(Font1);
 
 
 var view_x = camera_get_view_x(view_camera[0]);
 var view_y = camera_get_view_y(view_camera[0]);
 
-draw_text(view_x + 400, view_y + 100, "Pontuação: " + string(global.pontuacao));
-
-draw_text(view_x + 58, view_y + 110, + string(global.moedas_da_partida));
+draw_text(view_x + 350, view_y + 100, "Pontuação: " + string(global.pontuacao));
+draw_text(view_x + 350, view_y + 50, "Recorde: " + string(global.recorde));
+draw_text(view_x + 58, view_y + 120, + string(global.moedas_da_partida));
 
 draw_set_alpha(0.5);
 draw_set_color(c_black);
 draw_set_alpha(1); 
+
+
+
+
+
