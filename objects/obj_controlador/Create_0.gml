@@ -18,3 +18,4 @@ if (global.controle_tipo == "joystick" && !instance_exists(obj_joystick)) {
 }
 
 
+
