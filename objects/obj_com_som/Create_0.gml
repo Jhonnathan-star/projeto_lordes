@@ -7,6 +7,7 @@ acao_botao = function()
     // Zera os volumes
     audio_sound_gain(fundo_menu, 0, 0);
     audio_sound_gain(som_fundo, 0, 0);
+	audio_sound_gain(som_poder, 0, 0);
 
     // Troca o botão
     instance_change(obj_sem_som, true);

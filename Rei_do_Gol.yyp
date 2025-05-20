@@ -139,7 +139,6 @@
     {"id":{"name":"spr_poder_trofeu","path":"sprites/spr_poder_trofeu/spr_poder_trofeu.yy",},},
     {"id":{"name":"spr_policia","path":"sprites/spr_policia/spr_policia.yy",},},
     {"id":{"name":"spr_recomecar","path":"sprites/spr_recomecar/spr_recomecar.yy",},},
-    {"id":{"name":"spr_relogio","path":"sprites/spr_relogio/spr_relogio.yy",},},
     {"id":{"name":"spr_retornar","path":"sprites/spr_retornar/spr_retornar.yy",},},
     {"id":{"name":"spr_sair_pause","path":"sprites/spr_sair_pause/spr_sair_pause.yy",},},
     {"id":{"name":"spr_sair","path":"sprites/spr_sair/spr_sair.yy",},},

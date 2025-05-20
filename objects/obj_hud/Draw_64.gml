@@ -11,29 +11,37 @@ draw_text(view_x + 350, view_y + 50, "Recorde: " + string(global.recorde));
 // Desenha moedas
 draw_text(view_x + 58, view_y + 120, string(global.moedas_da_partida));
 
-// Se o jogador estiver invencível, mostra o sprite do relógio e o tempo
-if (global.invencivel) {
-    var tempo_restante = max(0, ceil(global.poder_tempo / room_speed)); // tempo em segundos
+// Desenha barra de tempo se invencível
+if (global.invencivel && variable_global_exists("poder_tempo_max")) {
+    if (instance_exists(obj_jogador)) {
+        var jogador = instance_find(obj_jogador, 0);
 
-    // Posição base do sprite do relógio (onde será desenhado)
-    var relogio_x = view_x + 550;
-    var relogio_y = view_y + 500;
+        var duracao_total = max(1, global.poder_tempo_max);
+        var tempo_atual = clamp(global.poder_tempo, 0, duracao_total);
+        var percent = tempo_atual / duracao_total;
 
-    // Desenha o sprite do relógio
-    draw_sprite(spr_relogio, 0, relogio_x, relogio_y);
+        // Posição do jogador na tela da GUI
+        var jogador_gui_x = jogador.x - view_x;
+        var jogador_gui_y = jogador.y - view_y;
 
-    // Calcula a posição real do canto superior esquerdo do sprite, considerando o origin
-    var relogio_draw_x = relogio_x - sprite_get_xoffset(spr_relogio);
-    var relogio_draw_y = relogio_y - sprite_get_yoffset(spr_relogio);
+        // Posição e tamanho da barra
+        var barra_largura = 100;
+        var barra_altura = 10;
+        var barra_x = jogador_gui_x - barra_largura / 2;
+        var barra_y = jogador_gui_y - 90; // Acima da cabeça
 
-    // Calcula o centro e a base do sprite para desenhar o texto abaixo
-    var centro_x = relogio_draw_x + sprite_get_width(spr_relogio) / 2;
-    var base_y = relogio_draw_y + sprite_get_height(spr_relogio);
+        // Fundo da barra
+        draw_set_color(c_black);
+        draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, false);
 
-    // Desenha o tempo restante centralizado abaixo do sprite
-    draw_set_halign(fa_center);
-    draw_text(centro_x, base_y + 5, string(tempo_restante) + "s");
-    draw_set_halign(fa_left); // volta ao padrão
+        // Parte preenchida
+        draw_set_color(c_lime);
+        draw_rectangle(barra_x, barra_y, barra_x + (barra_largura * percent), barra_y + barra_altura, false);
+
+    }
 }
+
+
+
 
 
