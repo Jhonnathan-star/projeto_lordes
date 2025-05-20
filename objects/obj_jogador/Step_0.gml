@@ -90,6 +90,10 @@ if (global.invencivel) {
     if (global.poder_tempo <= 0) {
         global.invencivel = false;
         sprite_index = spr_jogador_oficial; // sprite original
+		
+		// Troca a música de volta para a música de fundo
+		audio_stop_sound(som_poder);       // Parar música do poder
+        audio_play_sound(som_fundo, 1, true); // Tocar música de fundo (loop)
     }
 }
 
