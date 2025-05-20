@@ -11,13 +11,10 @@ var current_obstacles = instance_number(obj_obstaculo);
 
 // Verificar se o número de obstáculos é menor que o máximo permitido
 if (current_obstacles < max_obstacles) {
-    var obstacle_sprites = [[spr_obst_zagueiro, spr_obst_buraco,spr_obst_torcedor, spr_obst_ambulancia ],[ spr_cone,spr_policia,spr_obst_bicicleta, spr_buraco_rua]];
-	
+    var obstacle_sprites = [[spr_obst_zagueiro, spr_obst_buraco,spr_obst_torcedor, spr_obst_ambulancia ],[ spr_cone,spr_policia,spr_obst_bicicleta, spr_buraco_rua, spr_bloqueio]];
 	
 	
 	var colecao_sprites = obstacle_sprites[global.phase]
-	
-	
 	
 	
     var sprite_choice = irandom(array_length(colecao_sprites) - 1);

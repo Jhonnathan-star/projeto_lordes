@@ -106,6 +106,7 @@
     {"id":{"name":"spr_alavanca_joy","path":"sprites/spr_alavanca_joy/spr_alavanca_joy.yy",},},
     {"id":{"name":"spr_alavanca","path":"sprites/spr_alavanca/spr_alavanca.yy",},},
     {"id":{"name":"spr_anel_joy","path":"sprites/spr_anel_joy/spr_anel_joy.yy",},},
+    {"id":{"name":"spr_bloqueio","path":"sprites/spr_bloqueio/spr_bloqueio.yy",},},
     {"id":{"name":"spr_botao2","path":"sprites/spr_botao2/spr_botao2.yy",},},
     {"id":{"name":"spr_buraco_rua","path":"sprites/spr_buraco_rua/spr_buraco_rua.yy",},},
     {"id":{"name":"spr_campo01","path":"sprites/spr_campo01/spr_campo01.yy",},},
