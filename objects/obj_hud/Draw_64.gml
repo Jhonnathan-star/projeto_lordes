@@ -12,7 +12,7 @@ draw_text(view_x + 350, view_y + 50, "Recorde: " + string(global.recorde));
 draw_text(view_x + 58, view_y + 120, string(global.moedas_da_partida));
 
 // Desenha barra de tempo se invencível
-if (global.invencivel && variable_global_exists("poder_tempo_max")) {
+if (!global.paused && global.invencivel && variable_global_exists("poder_tempo_max")) {
     if (instance_exists(obj_jogador)) {
         var jogador = instance_find(obj_jogador, 0);
 

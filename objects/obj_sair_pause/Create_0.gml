@@ -9,6 +9,7 @@ acao_botao = function() {
 
     // Para a música do jogo
     audio_stop_sound(som_fundo);
+	audio_stop_sound(som_poder);
 	
 	// Salva o saldo de moedas no arquivo INI
 	ini_open("moedas_saldo.ini");
