@@ -27,10 +27,12 @@ if (som_salvo == "nao") {
     global.som_ativo = false;
     audio_sound_gain(fundo_menu, 0, 0);
     audio_sound_gain(som_fundo, 0, 0);
+	audio_sound_gain(som_poder, 0, 0);
 } else {
     global.som_ativo = true;
     audio_sound_gain(fundo_menu, 1, 0.5);
     audio_sound_gain(som_fundo, 1, 0.5);
+	audio_sound_gain(som_poder, 1, 0.5);
 }
 
 ini_close();
