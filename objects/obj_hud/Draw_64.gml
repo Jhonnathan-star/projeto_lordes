@@ -35,10 +35,18 @@ if (!global.paused && global.invencivel && variable_global_exists("poder_tempo_m
         draw_rectangle(barra_x, barra_y, barra_x + barra_largura, barra_y + barra_altura, false);
 
         // Parte preenchida
-        draw_set_color(c_lime);
-        draw_rectangle(barra_x, barra_y, barra_x + (barra_largura * percent), barra_y + barra_altura, false);
+		var cor_barra;
+		if (percent < 0.33) {
+		    cor_barra = c_red;
+		} else if (percent < 0.66) {
+		    cor_barra = c_yellow;
+	} else {
+            cor_barra = c_lime;
+}
 
-    }
+draw_set_color(cor_barra);
+draw_rectangle(barra_x, barra_y, barra_x + (barra_largura * percent), barra_y + barra_altura, false);
+	}
 }
 
 

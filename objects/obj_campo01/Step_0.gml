@@ -10,16 +10,17 @@ y = round(y);
 // Reposiciona o fundo no topo quando sair da tela (ajustado para evitar falhas com velocidade alta)
 if (y >= room_height) {
     y = -sprite_height + (y - room_height);
-}
-
-// Troca o sprite do campo quando a pontuação atinge 500
- if (global.pontuacao >= 1000) {
+	 if (global.pontuacao >= 500) {
         global.phase = 0;
         sprite_index = spr_fase3;
-    } else if (global.pontuacao >= 500) {
+    } else if (global.pontuacao >= 250) {
         global.phase = 1;
         sprite_index = spr_fase2;
     } else {
         global.phase = 0;
         sprite_index = spr_campo01;
     }
+}
+
+// Troca o sprite do campo quando a pontuação atinge 500
+
