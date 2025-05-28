@@ -143,6 +143,8 @@
     {"id":{"name":"spr_retornar","path":"sprites/spr_retornar/spr_retornar.yy",},},
     {"id":{"name":"spr_sair_pause","path":"sprites/spr_sair_pause/spr_sair_pause.yy",},},
     {"id":{"name":"spr_sair","path":"sprites/spr_sair/spr_sair.yy",},},
+    {"id":{"name":"spr_selecion_joy","path":"sprites/spr_selecion_joy/spr_selecion_joy.yy",},},
+    {"id":{"name":"spr_selecion_toque","path":"sprites/spr_selecion_toque/spr_selecion_toque.yy",},},
     {"id":{"name":"spr_sem_som","path":"sprites/spr_sem_som/spr_sem_som.yy",},},
     {"id":{"name":"spr_sim","path":"sprites/spr_sim/spr_sim.yy",},},
     {"id":{"name":"spr_toque","path":"sprites/spr_toque/spr_toque.yy",},},
