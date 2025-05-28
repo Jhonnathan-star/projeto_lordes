@@ -14,7 +14,7 @@ if (current_obstacles < max_obstacles) {
     var obstacle_sprites = [[spr_obst_zagueiro, spr_obst_buraco,spr_obst_torcedor, spr_obst_ambulancia ],[ spr_cone,spr_policia,spr_obst_bicicleta, spr_buraco_rua, spr_bloqueio]];
 	
 	
-	var colecao_sprites = obstacle_sprites[global.phase]
+	var colecao_sprites = obstacle_sprites[global.level]
 	
 	
     var sprite_choice = irandom(array_length(colecao_sprites) - 1);

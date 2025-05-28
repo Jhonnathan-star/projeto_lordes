@@ -11,13 +11,13 @@ y = round(y);
 if (y >= room_height) {
     y = -sprite_height + (y - room_height);
 	 if (global.pontuacao >= 500) {
-        global.phase = 0;
+        global.level = 0;
         sprite_index = spr_fase3;
     } else if (global.pontuacao >= 250) {
-        global.phase = 1;
+        global.level = 1;
         sprite_index = spr_fase2;
     } else {
-        global.phase = 0;
+        global.level = 0;
         sprite_index = spr_campo01;
     }
 }
