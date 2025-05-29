@@ -76,7 +76,6 @@
     {"id":{"name":"obj_joystick","path":"objects/obj_joystick/obj_joystick.yy",},},
     {"id":{"name":"obj_moeda","path":"objects/obj_moeda/obj_moeda.yy",},},
     {"id":{"name":"obj_moedas2","path":"objects/obj_moedas2/obj_moedas2.yy",},},
-    {"id":{"name":"obj_msg_comprado","path":"objects/obj_msg_comprado/obj_msg_comprado.yy",},},
     {"id":{"name":"obj_msg_saldo_insuficiente","path":"objects/obj_msg_saldo_insuficiente/obj_msg_saldo_insuficiente.yy",},},
     {"id":{"name":"obj_nao_game_over","path":"objects/obj_nao_game_over/obj_nao_game_over.yy",},},
     {"id":{"name":"obj_nao_loja","path":"objects/obj_nao_loja/obj_nao_loja.yy",},},
