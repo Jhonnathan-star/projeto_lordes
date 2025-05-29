@@ -5,6 +5,7 @@ layer_set_visible("Ui_sair", 0);
 layer_set_visible("Ui_game_over", 0);
 layer_set_visible("Ui_pause", 0);
 layer_set_visible("Ui_loja", 0);
+layer_set_visible("Ui_confirmacion", 0);
 
 
 if (!audio_is_playing(fundo_menu)) {

@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"boneco loja",
-    "path":"folders/Sprites/boneco loja.yy",
+    "name":"loja",
+    "path":"folders/Sprites/loja.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",
