@@ -1,28 +1,35 @@
 event_inherited();
 
 acao_botao = function () {
-    var preco_personagem = 30; // Valor da compra
+    var preco_personagem = 30;
 
-    // Toca o som de clique
     audio_play_sound(click_button, 1, false);
 
-    // Verifica se já foi comprado
+    // 🔁 Desmarcar os outros botões manualmente (substitua pelos nomes reais)
+    with (obj_amarelo1) sprite_index = spr_amarelo1;
+    with (obj_vermelho1) sprite_index = spr_vermelho1;
+	 with (obj_verde1) sprite_index = spr_verde1;
+    // Este botão (vermelho1) será marcado abaixo
+
     ini_open("moedas_saldo.ini");
     var comprado = ini_read_string("compras", "personagem2", "nao");
     ini_close();
 
     if (comprado == "sim") {
-        // Já comprado: só selecionar
         sprite_index = spr_azul2;
+
         ini_open("moedas_saldo.ini");
         ini_write_string("selecionado", "personagem", "personagem2");
         ini_close();
+
+        with (obj_jogador) {
+            sprite_index = spr_jogador_azul;
+        }
+
         exit;
     }
 
-    // Verifica se tem saldo suficiente
     if (global.moedas >= preco_personagem) {
-        // Desconta e salva
         global.moedas -= preco_personagem;
 
         ini_open("moedas_saldo.ini");
@@ -31,20 +38,17 @@ acao_botao = function () {
         ini_write_string("selecionado", "personagem", "personagem2");
         ini_close();
 
-        // Mostra "Comprado"
         instance_create_layer(x, y - 100, layer, obj_msg_comprado);
-
-        // Atualiza sprite
         sprite_index = spr_azul2;
 
-        // Destroi o sprite do valor, se ainda existir
-        if (instance_exists(obj_valor_15)) {
-            with (obj_valor_15) {
-                instance_destroy();
-            }
+        if (instance_exists(obj_valor_30)) {
+            with (obj_valor_30) instance_destroy();
+        }
+
+        with (obj_jogador) {
+            sprite_index = spr_jogador_azul;
         }
     } else {
-        // Sem saldo
         instance_create_layer(x, y - 100, layer, obj_msg_saldo_insuficiente);
     }
 };

@@ -9,7 +9,7 @@ acao_botao = function () {
         sprite_index = spr_azul1;
     }
 	    with (obj_verde1) {
-        sprite_index = spr_azul1;
+        sprite_index = spr_verde1;
     }
 
     // 2. Marca o botão atual como selecionado

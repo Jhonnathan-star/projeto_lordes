@@ -8,6 +8,7 @@ acao_botao = function () {
     // 🔁 Desmarcar os outros botões manualmente (substitua pelos nomes reais)
     with (obj_amarelo1) sprite_index = spr_amarelo1;
     with (obj_azul1) sprite_index = spr_azul1;
+	 with (obj_verde1) sprite_index = spr_verde1;
     // Este botão (vermelho1) será marcado abaixo
 
     ini_open("moedas_saldo.ini");

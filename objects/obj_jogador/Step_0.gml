@@ -102,7 +102,13 @@ switch (selecionado) {
     case "personagem1":
         sprite_index = spr_jogador_vermelho;
         break;
-
+	case "personagem2":
+        sprite_index = spr_jogador_azul;
+        break;
+	case "personagem3":
+        sprite_index = spr_jogador_verde;
+        break;
+	
     // Adicione mais cases aqui se tiver outros personagens
     default:
         sprite_index = spr_jogador_oficial;
