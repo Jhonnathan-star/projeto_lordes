@@ -93,6 +93,20 @@ if (global.invencivel) {
     }
 }
 
+ini_open("moedas_saldo.ini");
+var selecionado = ini_read_string("selecionado", "personagem", "padrao");
+ini_close();
+
+// Define o sprite conforme a escolha salva
+switch (selecionado) {
+    case "personagem1":
+        sprite_index = spr_jogador_vermelho;
+        break;
+
+    // Adicione mais cases aqui se tiver outros personagens
+    default:
+        sprite_index = spr_jogador_oficial;
+}
 
 
 

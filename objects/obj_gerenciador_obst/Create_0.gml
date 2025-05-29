@@ -1,4 +1,4 @@
-global.phase = 0
+global.level = 0
 
 
 // Número máximo de obstáculos que podem estar na tela ao mesmo tempo

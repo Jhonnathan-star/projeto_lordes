@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_loja_jogador",
-    "path":"sprites/spr_loja_jogador/spr_loja_jogador.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }
