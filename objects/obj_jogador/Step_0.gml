@@ -77,22 +77,6 @@ if (global.controle_tipo == "toque") {
 }
 
 
-if (global.invencivel) {
-    global.poder_tempo -= 1;
-
-    if (global.poder_tempo <= 90 && global.poder_tempo > 0) {
-        sprite_index = spr_jogador_poder_acabando;
-    }
-
-    if (global.poder_tempo <= 0) {
-        global.invencivel = false;
-        sprite_index = spr_jogador_oficial;
-
-        audio_stop_sound(som_poder);
-        audio_play_sound(som_fundo, 1, true);
-    }
-}
-
 ini_open("moedas_saldo.ini");
 var selecionado = ini_read_string("selecionado", "personagem", "padrao");
 ini_close();
@@ -112,6 +96,25 @@ switch (selecionado) {
     // Adicione mais cases aqui se tiver outros personagens
     default:
         sprite_index = spr_jogador_oficial;
+}
+
+if (global.invencivel) {
+    global.poder_tempo -= 1;
+
+    // Atualiza o sprite de acordo com o tempo restante
+    if (global.poder_tempo > 90) {
+        sprite_index = spr_jogador_poder; // Enquanto ainda tem bastante tempo
+    } else if (global.poder_tempo > 0) {
+        sprite_index = spr_jogador_poder_acabando; // Quando está acabando
+    }
+
+    if (global.poder_tempo <= 0) {
+        global.invencivel = false;
+        sprite_index = spr_jogador_oficial;
+
+        audio_stop_sound(som_poder);
+        audio_play_sound(som_fundo, 1, true);
+    }
 }
 
 
